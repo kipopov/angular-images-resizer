@@ -16,7 +16,7 @@ In this version the `resizeService.resizeImage` function return a promise. No ne
 ## Get started
 Add this module to your project with bower or npm:
 
-```bash 
+```bash
 bower install angular-images-resizer
 ```
 
@@ -26,20 +26,20 @@ npm install angular-images-resizer
 
 Add the component to your app:
 ```javascript
-angular.module('app', ['images-resizer']); 
+angular.module('app', ['images-resizer']);
 ```
 
 Then simply add the service to your code and start resizing your images :
 
-```javascript 
+```javascript
 angular.module('app', function ($document, $log, $scope, resizeService) {
   resizeService
     .resizeImage('resources/imageToResize', {
-        size: 100, 
+        size: 100,
         sizeScale: 'ko'
         // Other options ...
     })
-    .then(function(image){    
+    .then(function(image){
       // Add the resized image into the body
       var imageResized = document.createElement('img');
       imageResized.src = image;
@@ -82,6 +82,9 @@ Thanks
 
 ## Special thanks
 * This module is widely inspired by this article of the [liip blog] (https://blog.liip.ch/archive/2013/05/28/resizing-images-with-javascript.html).
+
+## KIPOPOV
+Trying to fix checkout error on Windows
 
 ## Licence
 MIT
